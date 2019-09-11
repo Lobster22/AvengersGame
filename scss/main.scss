@@ -1,0 +1,100 @@
+@import 'config';
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.avengers {
+  width: fit-content;
+  height: 95vh;
+  margin: calc(5vh / 2) 0;
+  padding: 20px;
+  border: 1px solid $primary-color;
+  border-radius: 20px;
+  position: relative;
+}
+
+.thanos {
+  padding-left: 50%;
+  margin: 20px 0;
+  position: relative;
+}
+
+.thanosImg {
+  transform: translateX(-50%);
+}
+
+.game-name {
+  width: fit-content;
+}
+
+h1,
+.score {
+  font-family: "Russo One", sans-serif;
+  color: $primary-color;
+}
+
+h2 {
+  font-size: 1.125em;
+  font-family: "Lobster Two", cursive;
+  text-align: right;
+  color: $secondary-color;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+}
+
+.game-board {
+  width: fit-content;
+  margin: 0 auto;
+  background: #fcfcfc;
+  display: grid;
+  grid-template-columns: repeat(8, 30px);
+  grid-template-rows: repeat(9, 30px);
+}
+
+.game-item img {
+  width: 27px;
+  height: 27px;
+}
+
+.thanos img,
+.game-item img {
+  cursor: pointer;
+}
+
+.game-item {
+  position: relative;
+}
+
+.score {
+  font-size: 1em;
+  position: absolute;
+  bottom: 15px;
+}
+
+.dust {
+  width: 240px;
+  height: 270px;
+  position: absolute;
+}
+
+.fake-game-board {
+  display: flex;
+  justify-content: center;
+}
+
+.byebye {
+  display: none;
+}
+
+.selected {
+  border: 1px solid $primary-color;
+  border-radius: 2px;
+}
+
+.invisible {
+  display: none;
+}
