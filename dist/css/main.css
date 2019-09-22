@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+p {
+  font-family: "Lato", sans-serif;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14,10 +18,8 @@ body {
           justify-content: center;
 }
 
-.avengers {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+.game {
+  width: 90vw;
   height: 95vh;
   margin: calc(5vh / 2) 0;
   padding: 20px;
@@ -26,41 +28,34 @@ body {
   position: relative;
 }
 
-.thanos {
-  padding-left: 50%;
-  margin: 20px 0;
-  position: relative;
+.game__name {
+  text-align: center;
 }
 
-.thanosImg {
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.game-name {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-h1,
-.score {
+.game__name h1 {
   font-family: "Russo One", sans-serif;
   color: #2c3147;
 }
 
-h2 {
+.game__name h2 {
   font-size: 1.125em;
   font-family: "Lobster Two", cursive;
   text-align: right;
   color: #b6a3fb;
 }
 
-p {
-  font-family: "Lato", sans-serif;
+.game__thanos {
+  padding-left: 50%;
+  margin: 20px 0;
+  position: relative;
 }
 
-.game-board {
+.game__thanos__img {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.game__board {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -74,42 +69,25 @@ p {
       grid-template-rows: repeat(9, 30px);
 }
 
-.game-item img {
+.game__board__item {
+  position: relative;
+  cursor: pointer;
+}
+
+.game__board__item img {
   width: 27px;
   height: 27px;
 }
 
-.thanos img,
-.game-item img {
-  cursor: pointer;
-}
-
-.game-item {
-  position: relative;
-}
-
-.score {
+.game__score {
+  font-family: "Russo One", sans-serif;
+  color: #2c3147;
   font-size: 1em;
   position: absolute;
   bottom: 15px;
 }
 
-.dust {
-  width: 240px;
-  height: 270px;
-  position: absolute;
-}
-
-.fake-game-board {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.byebye {
+.invisible {
   display: none;
 }
 
@@ -118,7 +96,7 @@ p {
   border-radius: 2px;
 }
 
-.invisible {
-  display: none;
+.dust {
+  position: absolute;
 }
 /*# sourceMappingURL=main.css.map */

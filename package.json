@@ -1,0 +1,27 @@
+{
+  "name": "avengersgame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lobster22/AvengersGame.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lobster22/AvengersGame/issues"
+  },
+  "homepage": "https://github.com/Lobster22/AvengersGame#readme",
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "chance": "^1.1.0",
+    "html2canvas": "^1.0.0-rc.4",
+    "jquery": "^3.4.1",
+    "jquery-ui": "^1.12.1"
+  }
+}

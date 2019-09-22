@@ -1,5 +1,6 @@
 <?php
-function riddleSolverPHP($board) {
+// complete not ready
+function riddleSolver($board) {
     return $board;
 }
 ?>
