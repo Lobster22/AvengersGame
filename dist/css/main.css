@@ -67,6 +67,7 @@ body {
       grid-template-columns: repeat(8, 30px);
   -ms-grid-rows: (30px)[9];
       grid-template-rows: repeat(9, 30px);
+  position: relative;
 }
 
 .game__board__item {
@@ -98,5 +99,9 @@ body {
 
 .dust {
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=main.css.map */
